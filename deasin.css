@@ -1,0 +1,15 @@
+@charset "UTF-8";
+	/* PCに適用されるCSS */
+
+@media screen and (max-width: 959px) {
+	/* タブレットに適用されるCSS　*/
+p{
+  font-size: 20px;
+}
+}
+@media screen and (max-width: 480px) {
+	/* スマホに適用されるCSS */
+P{
+  font-size: 18px;	
+}
+}

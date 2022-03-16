@@ -1,375 +1,83 @@
-// ===================================メッセージプール==========================
-const textpuul =  [
-    {    // ID タイトル番号 タイトル 問題文==========
-        mondaibangou:0,
-        mondaiban: "0:",
-        taitoruna:"テストメッセージです",
-        monndaina: "問題テストテキストです",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDa",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 1,
-        botan_on_off1: 1,
-        botan_on_off2: 1,
-        botan_on_off3: 1,
-        botan_on_off4: 1,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDa0",
-        botanID1:"botanIDa1",
-        botanID2:"botanIDa2",
-        botanID3:"botanIDa3",
-        botanID4:"botanIDa4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDa",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:1,
-        mondaiban: "1",
-        taitoruna:"IDを入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDb",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDb0",
-        botanID1:"botanIDb1",
-        botanID2:"botanIDb2",
-        botanID3:"botanIDb3",
-        botanID4:"botanIDb4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDb",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:2,
-        mondaiban: "2",
-        taitoruna:"体温を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDc",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDc0",
-        botanID1:"botanIDc1",
-        botanID2:"botanIDc2",
-        botanID3:"botanIDc3",
-        botanID4:"botanIDc4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDc",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:3,
-        mondaiban: "3",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDb",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDb0",
-        botanID1:"botanIDb1",
-        botanID2:"botanIDb2",
-        botanID3:"botanIDb3",
-        botanID4:"botanIDb4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDb",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:4,
-        mondaiban: "4",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDe",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDe0",
-        botanID1:"botanIDe1",
-        botanID2:"botanIDe2",
-        botanID3:"botanIDe3",
-        botanID4:"botanIDe4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDe",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:5,
-        mondaiban: "5",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDf",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDf0",
-        botanID1:"botanIDf1",
-        botanID2:"botanIDf2",
-        botanID3:"botanIDf3",
-        botanID4:"botanIDf4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDf",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:6,
-        mondaiban: "6",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDg",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDg0",
-        botanID1:"botanIDg1",
-        botanID2:"botanIDg2",
-        botanID3:"botanIDg3",
-        botanID4:"botanIDg4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDg",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:7,
-        mondaiban: "7",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDh",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDh0",
-        botanID1:"botanIDh1",
-        botanID2:"botanIDh2",
-        botanID3:"botanIDh3",
-        botanID4:"botanIDh4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDh",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:8,
-        mondaiban: "8",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDh",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDh0",
-        botanID1:"botanIDh1",
-        botanID2:"botanIDh2",
-        botanID3:"botanIDh3",
-        botanID4:"botanIDh4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDh",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:9,
-        mondaiban: "9",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDi",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDi0",
-        botanID1:"botanIDi1",
-        botanID2:"botanIDi2",
-        botanID3:"botanIDi3",
-        botanID4:"botanIDi4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDi",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:10,
-        mondaiban: "10",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDi",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDi0",
-        botanID1:"botanIDi1",
-        botanID2:"botanIDi2",
-        botanID3:"botanIDi3",
-        botanID4:"botanIDi4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDi",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:11,
-        mondaiban: "11",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDi",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDi0",
-        botanID1:"botanIDi1",
-        botanID2:"botanIDi2",
-        botanID3:"botanIDi3",
-        botanID4:"botanIDi4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDi",
-    },{    // ID タイトル番号 タイトル 問題文==========
-        mondaibanngou:12,
-        mondaiban: "12",
-        taitoruna:"脈拍を入れてください",
-        monndaina: "",
-        // テキストbox_on_oof テキストboxID
-        textbox_on_off: 1,
-        textboxID: "textboxIDi",
-        // ボタン_on_off ボタン名前 ボタンID
-        botan_on_off0: 0,
-        botan_on_off1: 0,
-        botan_on_off2: 0,
-        botan_on_off3: 0,
-        botan_on_off4: 0,
-        botan0: "テスト0です",
-        botan1: "テスト1です",
-        botan2: "テスト2です",
-        botan3: "テスト3です",
-        botan4: "テスト4です",
-        botanID0:"botanIDi0",
-        botanID1:"botanIDi1",
-        botanID2:"botanIDi2",
-        botanID3:"botanIDi3",
-        botanID4:"botanIDi4",
-        // 次へ_no_off 
-        next_no_off: 1,
-        next:"次へ",
-        nextID:"nextIDi",
-    }
-]
 // ===================================定義域＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-let $perzi = 0;
-// 問題番号
+let $perzi = 1;
+let $perzi2 = 0; 
+let $perzi3 = 0; 
+let ckecnber = 0;
+let kuri = 0;
+let on_atai = 0;
+var randoms = [];
+var randoms0 = [];
 
+let AllUp = 0;
+let AllHp = 0;
+let AllTp = 0;
+let AllUH = 0;
+let AllUHT = 0;
+
+let Up2 = 0;
+let Up3 = 0;
+let Up4 = 0;
+let Up5 = 0;
+let Up6 = 0;
+let Up7 = 0;
+let Up8 = 0;
+let Up9 = 0;
+let Up10 = 0;
+let Up11 = 0;
+let Up12 = 0;
+
+let Hp2 = 0;
+let Hp3 = 0;
+let Hp4 = 0;
+let Hp5 = 0;
+let Hp6 = 0;
+let Hp7 = 0;
+let Hp8 = 0;
+let Hp9 = 0;
+let Hp10 = 0;
+let Hp11 = 0;
+let Hp12 = 0;
+
+let Tp2 = 0;
+let Tp3 = 0;
+let Tp4 = 0;
+let Tp5 = 0;
+let Tp6 = 0;
+let Tp7 = 0;
+let Tp8 = 0;
+let Tp9 = 0;
+let Tp10 = 0;
+let Tp11 = 0;
+let Tp12 = 0;
+// ============乱数域＝＝＝＝＝
+/** 最小値と最大値 */
+var min = 0, max = 14;
+for(i = min; i <= max; i++){
+  while(true){
+    var tmp = intRandom(min, max);
+    if(!randoms.includes(tmp)){
+      randoms.push(tmp);
+      break;
+    }
+  }
+}
+var min0 = 0, max0 = 14;
+for(i = min0; i <= max0; i++){
+  while(true){
+    var tmp0 = intRandom(min, max);
+    if(!randoms0.includes(tmp0)){
+      randoms0.push(tmp0);
+      break;
+    }
+  }
+}
+function intRandom(min, max){
+    return Math.floor( Math.random() * (max - min + 1)) + min;
+}
+var ransu = Math.floor( Math.random() * 30 ) ;
+
+// ============定義＝＝＝＝＝
+// 問題番号
 let $nannberID = document.getElementById("nannbar");
 $nannberID.textContent = textpuul[$perzi].mondaiban;
 // タイトル
@@ -379,7 +87,7 @@ $titleID.textContent = textpuul[$perzi].taitoruna;
 let $textboxID = document.getElementById("textbox");
 let $input1 = document.createElement("input");
 $input1.setAttribute("type", "text");
-$input1.setAttribute("maxlength", "5");
+$input1.setAttribute("maxlength", textpuul[$perzi].colsID);
 $input1.setAttribute("id", textpuul[$perzi].textboxID);
 $input1.setAttribute("size", "10");
 $textboxID.appendChild($input1);
@@ -421,6 +129,12 @@ botan4ID1.setAttribute("type", "button");
 botan4ID1.setAttribute("id", textpuul[$perzi].botanID4);
 botan4ID1.setAttribute("value", textpuul[$perzi].botan4);
 botan4ID.appendChild(botan4ID1);
+
+botan0ID.style.display="none";
+botan1ID.style.display="none";
+botan2ID.style.display="none";
+botan3ID.style.display="none";
+botan4ID.style.display="none";
 //次へボタン
 let nexID = document.getElementById("sousinn");
 let nexID1 = document.createElement("input");
@@ -436,106 +150,2097 @@ kakID.setAttribute("id", "aaaaa");
 kakID.setAttribute("value", "確認ボタン");
 kak.appendChild(kakID);
 
+let botannBB = document.getElementById("testbut3");
+let botannBB1 = document.createElement("input");
+botannBB1.setAttribute("type", "button");
+botannBB1.setAttribute("id", "botann33");
+botannBB1.setAttribute("value", "結果表示");
+botannBB.appendChild(botannBB1);
+const botannBB2 = document.getElementById("botann33");
+
 // リセットボタン
-let rise = document.getElementById("sousinn");
+let rise = document.getElementById("testbut2");
 let riseID = document.createElement("input");
 riseID.setAttribute("type", "button");
 riseID.setAttribute("id", "bbbb");
 riseID.setAttribute("value", "リセット");
 rise.appendChild(riseID);
 
+// 結果ボタン
+let botannAA = document.getElementById("botannAA");
+let botannAA1 = document.createElement("input");
+botannAA1.setAttribute("type", "button");
+botannAA1.setAttribute("id", "botannBB");
+botannAA1.setAttribute("value", "結果表示");
+botannAA.appendChild(botannAA1);
+const botannAA2 = document.getElementById("botannBB");
+botannAA.style.display="none";
+
+// ============取得＝＝＝＝＝
+let texbox = document.getElementById(textpuul[$perzi].textboxID);
 const nextbotID = document.getElementById(textpuul[$perzi].nextID);
+const botan0ID2 = document.getElementById(textpuul[$perzi].botanID0);
+const botan1ID2 = document.getElementById(textpuul[$perzi].botanID1);
+const botan2ID2 = document.getElementById(textpuul[$perzi].botanID2);
+const botan3ID2 = document.getElementById(textpuul[$perzi].botanID3);
+const botan4ID2 = document.getElementById(textpuul[$perzi].botanID4);
+const keikoku = document.getElementById("keikoku");
 const kakbotID = document.getElementById("aaaaa");
 const risebotID = document.getElementById("bbbb");
 // =============================実行=====================================
-
+// IDから睡眠時間まで
 nextbotID.addEventListener('click', () => {
-    // チェック域
-    if( $perzi === 0 ){
-        kakuninbutjs0 = document.getElementById("textboxIDa").value;
-    }
-    if( $perzi === 1 ){
-        kakuninbutjs1 = document.getElementById("textboxIDb").value;
-    }
-    if( $perzi === 2 ){
-        kakuninbutjs2 = document.getElementById("textboxIDc").value;
+    if( texbox.value === "" ){
+        keikoku.innerText = "正しい値を入れてください"
+    }else{ // チェック域
+        if( $perzi === 0 ){
+            kakuninbutjs0 = texbox.value;
+        }
+        // id
+        if( $perzi === 1 ){
+            kakuninbutjs1= texbox.value;
+        }
+        // 体温
+        if( $perzi === 2 ){
+            kakuninbutjs2 = texbox.value;
+        }
+        // 脈拍
+        if( $perzi === 3 ){
+            kakuninbutjs3 = texbox.value;
+        }
+        // 睡眠
+        if( $perzi === 4 ){
+            kakuninbutjs4 = texbox.value;
+        }
+        texbox.value = '';
+        keikoku.innerText = "";
+        $perzi++;
+        
+        $input1.setAttribute("id", textpuul[$perzi].textboxID);
+        $input1.setAttribute("maxlength", textpuul[$perzi].colsID);
+        botan0ID1.setAttribute("id", textpuul[$perzi].botanID0);
+        botan0ID1.setAttribute("value", textpuul[$perzi].botan0);
+        botan1ID1.setAttribute("id", textpuul[$perzi].botanID1);
+        botan1ID1.setAttribute("value", textpuul[$perzi].botan1);
+        botan2ID1.setAttribute("id", textpuul[$perzi].botanID2);
+        botan2ID1.setAttribute("value", textpuul[$perzi].botan2);
+        botan3ID1.setAttribute("id", textpuul[$perzi].botanID3);
+        botan3ID1.setAttribute("value", textpuul[$perzi].botan3);
+        botan4ID1.setAttribute("id", textpuul[$perzi].botanID4);
+        botan4ID1.setAttribute("value", textpuul[$perzi].botan4);
+        // 番号
+        $nannberID.textContent = textpuul[$perzi].mondaiban;
+        // タイトル
+        $titleID.textContent = textpuul[$perzi].taitoruna;
+        // 回答ボックス
+        let numbox = textpuul[$perzi].textbox_on_off;
+        if( numbox > 0 ) {
+           $textboxID.style.display = "block";
+        }else{
+           $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = textpuul[$perzi].monndaina;
+
+        // ボタンBOX
+        let numbut0 = textpuul[$perzi].botan_on_off0;
+        let numbut1 = textpuul[$perzi].botan_on_off1;
+        let numbut2 = textpuul[$perzi].botan_on_off2;
+        let numbut3 = textpuul[$perzi].botan_on_off3;
+        let numbut4 = textpuul[$perzi].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+           botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+
+        let numnex = textpuul[$perzi].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
     }
 
+});   
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ボタン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+botan0ID2.addEventListener('click', () => {
+    if( $perzi === 5 ){
+        $perzi2 = randoms[0]
+    }
+    if( $perzi === 6 ){
+        $perzi2 = randoms[1]
+    }   
+    if( $perzi === 8 ){
+        $perzi3 = randoms0[0]
+    }
+    if( $perzi === 9 ){
+        $perzi3 = randoms0[1]
+    }
+    if( $perzi === 10 ){
+        $perzi3 = randoms0[2]
+    }
+    if( $perzi === 11 ){
+        $perzi3 = randoms0[3]
+    }
+    if( $perzi === 12 ){
+        $perzi3 = randoms0[4]
+    }
+// カウンター＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    if( $perzi === 5 ){
+        ckec = botan0ID2.value;
+        if( ckec === textpuul[$perzi].botan0 ){
+            ckecnber = 0
+        }        
+        Up5 = textpuul[$perzi].botanup[ckecnber];
+        Hp5 = textpuul[$perzi].botanhp[ckecnber];
+        Tp5 = textpuul[$perzi].botantp[ckecnber];
+    }
+    // HP
+    if( $perzi === 6 ){
+        ckec = botan0ID2.value;
+        if( ckec === hppuul[$perzi2].botan0 ){
+            ckecnber = 0
+        }             
+        Up6 = hppuul[$perzi2].botanup[ckecnber];
+        Hp6 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp6 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    if( $perzi === 7 ){
+        ckec = botan0ID2.value;
+        if( ckec === hppuul[$perzi2].botan0 ){
+            ckecnber = 0
+        }             
+        Up7 = hppuul[$perzi2].botanup[ckecnber];
+        Hp7 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp7 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    // 計算
+    if( $perzi === 8 ){
+        ckec = botan0ID2.value;
+        if( ckec === hp2puul[ransu].botan0 ){
+            ckecnber = 0
+        }         
+        Up8 = hp2puul[ransu].botanup[ckecnber];
+        Hp8 = hp2puul[ransu].botanhp[ckecnber];
+        Tp8 = hp2puul[ransu].botantp[ckecnber];
+    }
+    // UT
+    if( $perzi === 9 ){
+        ckec = botan0ID2.value;
+        if( ckec === utpuul[$perzi3].botan0 ){
+            ckecnber = 0
+        }          
+        Up9 = utpuul[$perzi3].botanup[ckecnber];
+        Hp9 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp9 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 10 ){
+        ckec = botan0ID2.value;
+        if( ckec === utpuul[$perzi3].botan0 ){
+            ckecnber = 0
+        }        
+        Up10 = utpuul[$perzi3].botanup[ckecnber];
+        Hp10 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp10 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 11 ){
+        ckec = botan0ID2.value;
+        if( ckec === utpuul[$perzi3].botan0 ){
+            ckecnber = 0
+        }        
+        Up11 = utpuul[$perzi3].botanup[ckecnber];
+        Hp11 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp11 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 12 ){
+        ckec = botan0ID2.value;
+        if( ckec === utpuul[$perzi3].botan0 ){
+            ckecnber = 0
+        }        
+        Up12 = utpuul[$perzi3].botanup[ckecnber];
+        Hp12 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp12 = utpuul[$perzi3].botantp[ckecnber];
+    }
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝カウンタ＝
     $perzi++;
-
-    $input1.setAttribute("id", textpuul[$perzi].textboxID);
-    botan0ID1.setAttribute("id", textpuul[$perzi].botanID0);
-    botan0ID1.setAttribute("value", textpuul[$perzi].botan0);
-    botan1ID1.setAttribute("id", textpuul[$perzi].botanID1);
-    botan1ID1.setAttribute("value", textpuul[$perzi].botan1);
-    botan2ID1.setAttribute("id", textpuul[$perzi].botanID2);
-    botan2ID1.setAttribute("value", textpuul[$perzi].botan2);
-    botan3ID1.setAttribute("id", textpuul[$perzi].botanID3);
-    botan3ID1.setAttribute("value", textpuul[$perzi].botan3);
-    botan4ID1.setAttribute("id", textpuul[$perzi].botanID4);
-    botan4ID1.setAttribute("value", textpuul[$perzi].botan4);
-    // 番号
-    $nannberID.textContent = textpuul[$perzi].mondaiban;
-    // タイトル
-    $titleID.textContent = textpuul[$perzi].taitoruna;
-    // 回答ボックス
-    let numbox = textpuul[$perzi].textbox_on_off;
-    if( numbox > 0 ) {
-        $textboxID.style.display = "block";
-    }else{
-        $textboxID.style.display = "none" ;
+    if($perzi < 8 ){
+        $input1.setAttribute("id", hppuul[$perzi2].textboxID);
+        botan0ID1.setAttribute("id", hppuul[$perzi2].botanID0);
+        botan0ID1.setAttribute("value", hppuul[$perzi2].botan0);
+        botan1ID1.setAttribute("id", hppuul[$perzi2].botanID1);
+        botan1ID1.setAttribute("value", hppuul[$perzi2].botan1);
+        botan2ID1.setAttribute("id", hppuul[$perzi2].botanID2);
+        botan2ID1.setAttribute("value", hppuul[$perzi2].botan2);
+        botan3ID1.setAttribute("id", hppuul[$perzi2].botanID3);
+        botan3ID1.setAttribute("value", hppuul[$perzi2].botan3);
+        botan4ID1.setAttribute("id", hppuul[$perzi2].botanID4);
+        botan4ID1.setAttribute("value", hppuul[$perzi2].botan4);
+        // 番号
+        $nannberID.textContent = hppuul[$perzi2].mondaiban;
+        // タイトル
+        $titleID.textContent = hppuul[$perzi2].taitoruna;
+        // 回答ボックス
+        let numbox = hppuul[$perzi2].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hppuul[$perzi2].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hppuul[$perzi2].botan_on_off0;
+        let numbut1 = hppuul[$perzi2].botan_on_off1;
+        let numbut2 = hppuul[$perzi2].botan_on_off2;
+        let numbut3 = hppuul[$perzi2].botan_on_off3;
+        let numbut4 = hppuul[$perzi2].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hppuul[$perzi2].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
     }
-    // 問題ボックス
-    $mondaiID.textContent = textpuul[$perzi].monndaina;
-
-    // ボタンBOX
-    let numbut0 = textpuul[$perzi].botan_on_off0;
-    let numbut1 = textpuul[$perzi].botan_on_off1;
-    let numbut2 = textpuul[$perzi].botan_on_off2;
-    let numbut3 = textpuul[$perzi].botan_on_off3;
-    let numbut4 = textpuul[$perzi].botan_on_off4;
-    if( numbut0 < 1 ) {
-        botan0ID.style.display="none";
-    }else{
-        botan0ID.style.display="block";
+    if($perzi === 8 ){
+        $input1.setAttribute("id", hp2puul[ransu].textboxID);
+        botan0ID1.setAttribute("id", hp2puul[ransu].botanID0);
+        botan0ID1.setAttribute("value", hp2puul[ransu].botan0);
+        botan1ID1.setAttribute("id", hp2puul[ransu].botanID1);
+        botan1ID1.setAttribute("value", hp2puul[ransu].botan1);
+        botan2ID1.setAttribute("id", hp2puul[ransu].botanID2);
+        botan2ID1.setAttribute("value", hp2puul[ransu].botan2);
+        botan3ID1.setAttribute("id", hp2puul[ransu].botanID3);
+        botan3ID1.setAttribute("value", hp2puul[ransu].botan3);
+        botan4ID1.setAttribute("id", hp2puul[ransu].botanID4);
+        botan4ID1.setAttribute("value", hp2puul[ransu].botan4);
+        // 番号
+        $nannberID.textContent = hp2puul[ransu].mondaiban;
+        // タイトル
+        $titleID.textContent = hp2puul[ransu].taitoruna;
+        // 回答ボックス
+        let numbox = hp2puul[ransu].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hp2puul[ransu].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hp2puul[ransu].botan_on_off0;
+        let numbut1 = hp2puul[ransu].botan_on_off1;
+        let numbut2 = hp2puul[ransu].botan_on_off2;
+        let numbut3 = hp2puul[ransu].botan_on_off3;
+        let numbut4 = hp2puul[ransu].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hp2puul[ransu].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
     }
-    if( numbut1 < 1 ) {
-        botan1ID.style.display="none";
-    }else{
-        botan1ID.style.display="block";
-    }    
-    if( numbut2 < 1 ) {
-        botan2ID.style.display="none";
-    }else{
-        botan2ID.style.display="block";
-    }    
-    if( numbut3 < 1 ) {
-        botan3ID.style.display="none";
-    }else{
-        botan3ID.style.display="block";
-    }
-    if( numbut4 < 1 ) {
-        botan4ID.style.display="none";
-    }else{
-        botan4ID.style.display="block";
-    }
-
-    let numnex = textpuul[$perzi].next_no_off;
-    if( numnex < 1 ) {
-        nexID.style.display="none";
-    }else{
-        nexID.style.display="block";
+    if( $perzi > 8 ){
+        if( $perzi < 13 ){ 
+            $input1.setAttribute("id", utpuul[$perzi3].textboxID);
+            botan0ID1.setAttribute("id", utpuul[$perzi3].botanID0);
+            botan0ID1.setAttribute("value", utpuul[$perzi3].botan0);
+            botan1ID1.setAttribute("id", utpuul[$perzi3].botanID1);
+            botan1ID1.setAttribute("value", utpuul[$perzi3].botan1);
+            botan2ID1.setAttribute("id", utpuul[$perzi3].botanID2);
+            botan2ID1.setAttribute("value", utpuul[$perzi3].botan2);
+            botan3ID1.setAttribute("id", utpuul[$perzi3].botanID3);
+            botan3ID1.setAttribute("value", utpuul[$perzi3].botan3);
+            botan4ID1.setAttribute("id", utpuul[$perzi3].botanID4);
+            botan4ID1.setAttribute("value", utpuul[$perzi3].botan4);
+            // 番号
+            $nannberID.textContent = utpuul[$perzi3].mondaiban;
+            // タイトル
+            $titleID.textContent = utpuul[$perzi3].taitoruna;
+            // 回答ボックス
+            let numbox = utpuul[$perzi3].textbox_on_off;
+            if( numbox > 0 ) {
+                $textboxID.style.display = "block";
+            }else{
+                $textboxID.style.display = "none" ;
+            }
+            // 問題ボックス
+            $mondaiID.textContent = utpuul[$perzi3].monndaina;
+        
+            // ボタンBOX
+            let numbut0 = utpuul[$perzi3].botan_on_off0;
+            let numbut1 = utpuul[$perzi3].botan_on_off1;
+            let numbut2 = utpuul[$perzi3].botan_on_off2;
+            let numbut3 = utpuul[$perzi3].botan_on_off3;
+            let numbut4 = utpuul[$perzi3].botan_on_off4;
+            if( numbut0 < 1 ) {
+                botan0ID.style.display="none";
+            }else{
+                botan0ID.style.display="block";
+            }
+            if( numbut1 < 1 ) {
+                botan1ID.style.display="none";
+            }else{
+                botan1ID.style.display="block";
+            }    
+            if( numbut2 < 1 ) {
+                botan2ID.style.display="none";
+            }else{
+                botan2ID.style.display="block";
+            }    
+            if( numbut3 < 1 ) {
+                botan3ID.style.display="none";
+            }else{
+                botan3ID.style.display="block";
+            }
+            if( numbut4 < 1 ) {
+                botan4ID.style.display="none";
+            }else{
+                botan4ID.style.display="block";
+            }
+        
+            let numnex = utpuul[$perzi3].next_no_off;
+            if( numnex < 1 ) {
+                nexID.style.display="none";
+            }else{
+                nexID.style.display="block";
+            }
+        }
+        if( $perzi === 13 ){
+            // 番号
+            $nannberID.textContent = "";
+            // タイトル
+            $titleID.textContent = "";
+            // 回答ボックス
+            $textboxID.style.display = "none" ;
+            // 問題ボックス
+            $mondaiID.textContent = ""; 
+            // ボタンBOX
+            botan0ID.style.display="none";
+            botan1ID.style.display="none";
+            botan2ID.style.display="none";
+            botan3ID.style.display="none";
+            botan4ID.style.display="none";
+            nexID.style.display="none";
+            botannAA.style.display="block";
+        } 
     }
 });
 
+botan1ID2.addEventListener('click', () => {     
+    if( $perzi === 5 ){
+        $perzi2 = randoms[0]
+    }
+    if( $perzi === 6 ){
+        $perzi2 = randoms[1]
+    }   
+    if( $perzi === 8 ){
+        $perzi3 = randoms0[0]
+    }
+    if( $perzi === 9 ){
+        $perzi3 = randoms0[1]
+    }
+    if( $perzi === 10 ){
+        $perzi3 = randoms0[2]
+    }
+    if( $perzi === 11 ){
+        $perzi3 = randoms0[3]
+    }
+    if( $perzi === 12 ){
+        $perzi3 = randoms0[4]
+    }
+// カウンター＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    if( $perzi === 5 ){
+        ckec = botan1ID2.value;  
+        if( ckec === textpuul[$perzi].botan1 ){
+            ckecnber = 1
+        }             
+        Up5 = textpuul[$perzi].botanup[ckecnber];
+        Hp5 = textpuul[$perzi].botanhp[ckecnber];
+        Tp5 = textpuul[$perzi].botantp[ckecnber];
+    }
+    // HP
+    if( $perzi === 6 ){
+        ckec = botan1ID2.value; 
+        if( ckec === hppuul[$perzi2].botan1 ){
+            ckecnber = 1
+        }            
+        Up6 = hppuul[$perzi2].botanup[ckecnber];
+        Hp6 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp6 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    if( $perzi === 7 ){
+        ckec = botan1ID2.value;
+        if( ckec === hppuul[$perzi2].botan1 ){
+            ckecnber = 1
+        }             
+        Up7 = hppuul[$perzi2].botanup[ckecnber];
+        Hp7 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp7 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    // 計算
+    if( $perzi === 8 ){
+        ckec = botan1ID2.value;
+ 
+        if( ckec === hp2puul[ransu].botan1 ){
+            ckecnber = 1
+        }        
+        Up8 = hp2puul[ransu].botanup[ckecnber];
+        Hp8 = hp2puul[ransu].botanhp[ckecnber];
+        Tp8 = hp2puul[ransu].botantp[ckecnber];
+    }
+    // UT
+    if( $perzi === 9 ){
+        ckec = botan1ID2.value;     
+        if( ckec === utpuul[$perzi3].botan1 ){
+            ckecnber = 1
+        }        
+        Up9 = utpuul[$perzi3].botanup[ckecnber];
+        Hp9 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp9 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 10 ){
+        ckec = botan1ID2.value;
+        if( ckec === utpuul[$perzi3].botan1 ){
+            ckecnber = 1
+        }        
+        Up10 = utpuul[$perzi3].botanup[ckecnber];
+        Hp10 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp10 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 11 ){
+        ckec = botan1ID2.value;     
+        if( ckec === utpuul[$perzi3].botan1 ){
+            ckecnber = 1
+        }        
+        Up11 = utpuul[$perzi3].botanup[ckecnber];
+        Hp11 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp11 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 12 ){
+        ckec = botan1ID2.value;     
+        if( ckec === utpuul[$perzi3].botan1 ){
+            ckecnber = 1
+        }        
+        Up12 = utpuul[$perzi3].botanup[ckecnber];
+        Hp12 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp12 = utpuul[$perzi3].botantp[ckecnber];
+    }
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝カウンタ＝
+    $perzi++;
+    if($perzi < 8 ){
+        $input1.setAttribute("id", hppuul[$perzi2].textboxID);
+        botan0ID1.setAttribute("id", hppuul[$perzi2].botanID0);
+        botan0ID1.setAttribute("value", hppuul[$perzi2].botan0);
+        botan1ID1.setAttribute("id", hppuul[$perzi2].botanID1);
+        botan1ID1.setAttribute("value", hppuul[$perzi2].botan1);
+        botan2ID1.setAttribute("id", hppuul[$perzi2].botanID2);
+        botan2ID1.setAttribute("value", hppuul[$perzi2].botan2);
+        botan3ID1.setAttribute("id", hppuul[$perzi2].botanID3);
+        botan3ID1.setAttribute("value", hppuul[$perzi2].botan3);
+        botan4ID1.setAttribute("id", hppuul[$perzi2].botanID4);
+        botan4ID1.setAttribute("value", hppuul[$perzi2].botan4);
+        // 番号
+        $nannberID.textContent = hppuul[$perzi2].mondaiban;
+        // タイトル
+        $titleID.textContent = hppuul[$perzi2].taitoruna;
+        // 回答ボックス
+        let numbox = hppuul[$perzi2].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hppuul[$perzi2].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hppuul[$perzi2].botan_on_off0;
+        let numbut1 = hppuul[$perzi2].botan_on_off1;
+        let numbut2 = hppuul[$perzi2].botan_on_off2;
+        let numbut3 = hppuul[$perzi2].botan_on_off3;
+        let numbut4 = hppuul[$perzi2].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hppuul[$perzi2].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
+    }
+    if($perzi === 8 ){
+        $input1.setAttribute("id", hp2puul[ransu].textboxID);
+        botan0ID1.setAttribute("id", hp2puul[ransu].botanID0);
+        botan0ID1.setAttribute("value", hp2puul[ransu].botan0);
+        botan1ID1.setAttribute("id", hp2puul[ransu].botanID1);
+        botan1ID1.setAttribute("value", hp2puul[ransu].botan1);
+        botan2ID1.setAttribute("id", hp2puul[ransu].botanID2);
+        botan2ID1.setAttribute("value", hp2puul[ransu].botan2);
+        botan3ID1.setAttribute("id", hp2puul[ransu].botanID3);
+        botan3ID1.setAttribute("value", hp2puul[ransu].botan3);
+        botan4ID1.setAttribute("id", hp2puul[ransu].botanID4);
+        botan4ID1.setAttribute("value", hp2puul[ransu].botan4);
+        // 番号
+        $nannberID.textContent = hp2puul[ransu].mondaiban;
+        // タイトル
+        $titleID.textContent = hp2puul[ransu].taitoruna;
+        // 回答ボックス
+        let numbox = hp2puul[ransu].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hp2puul[ransu].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hp2puul[ransu].botan_on_off0;
+        let numbut1 = hp2puul[ransu].botan_on_off1;
+        let numbut2 = hp2puul[ransu].botan_on_off2;
+        let numbut3 = hp2puul[ransu].botan_on_off3;
+        let numbut4 = hp2puul[ransu].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hp2puul[ransu].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
+    }
+    if( $perzi > 8 ){
+        if( $perzi < 13 ){ 
+            $input1.setAttribute("id", utpuul[$perzi3].textboxID);
+            botan0ID1.setAttribute("id", utpuul[$perzi3].botanID0);
+            botan0ID1.setAttribute("value", utpuul[$perzi3].botan0);
+            botan1ID1.setAttribute("id", utpuul[$perzi3].botanID1);
+            botan1ID1.setAttribute("value", utpuul[$perzi3].botan1);
+            botan2ID1.setAttribute("id", utpuul[$perzi3].botanID2);
+            botan2ID1.setAttribute("value", utpuul[$perzi3].botan2);
+            botan3ID1.setAttribute("id", utpuul[$perzi3].botanID3);
+            botan3ID1.setAttribute("value", utpuul[$perzi3].botan3);
+            botan4ID1.setAttribute("id", utpuul[$perzi3].botanID4);
+            botan4ID1.setAttribute("value", utpuul[$perzi3].botan4);
+            // 番号
+            $nannberID.textContent = utpuul[$perzi3].mondaiban;
+            // タイトル
+            $titleID.textContent = utpuul[$perzi3].taitoruna;
+            // 回答ボックス
+            let numbox = utpuul[$perzi3].textbox_on_off;
+            if( numbox > 0 ) {
+                $textboxID.style.display = "block";
+            }else{
+                $textboxID.style.display = "none" ;
+            }
+            // 問題ボックス
+            $mondaiID.textContent = utpuul[$perzi3].monndaina;
+        
+            // ボタンBOX
+            let numbut0 = utpuul[$perzi3].botan_on_off0;
+            let numbut1 = utpuul[$perzi3].botan_on_off1;
+            let numbut2 = utpuul[$perzi3].botan_on_off2;
+            let numbut3 = utpuul[$perzi3].botan_on_off3;
+            let numbut4 = utpuul[$perzi3].botan_on_off4;
+            if( numbut0 < 1 ) {
+                botan0ID.style.display="none";
+            }else{
+                botan0ID.style.display="block";
+            }
+            if( numbut1 < 1 ) {
+                botan1ID.style.display="none";
+            }else{
+                botan1ID.style.display="block";
+            }    
+            if( numbut2 < 1 ) {
+                botan2ID.style.display="none";
+            }else{
+                botan2ID.style.display="block";
+            }    
+            if( numbut3 < 1 ) {
+                botan3ID.style.display="none";
+            }else{
+                botan3ID.style.display="block";
+            }
+            if( numbut4 < 1 ) {
+                botan4ID.style.display="none";
+            }else{
+                botan4ID.style.display="block";
+            }
+        
+            let numnex = utpuul[$perzi3].next_no_off;
+            if( numnex < 1 ) {
+                nexID.style.display="none";
+            }else{
+                nexID.style.display="block";
+            }
+        }
+        if( $perzi === 13 ){
+            // 番号
+            $nannberID.textContent = "";
+            // タイトル
+            $titleID.textContent = "";
+            // 回答ボックス
+            $textboxID.style.display = "none" ;
+            // 問題ボックス
+            $mondaiID.textContent = ""; 
+            // ボタンBOX
+            botan0ID.style.display="none";
+            botan1ID.style.display="none";
+            botan2ID.style.display="none";
+            botan3ID.style.display="none";
+            botan4ID.style.display="none";
+            nexID.style.display="none";
+            botannAA.style.display="block";
+        }
+    }
+});
 
+botan2ID2.addEventListener('click', () => {     
+    if( $perzi === 5 ){
+        $perzi2 = randoms[0]
+    }
+    if( $perzi === 6 ){
+        $perzi2 = randoms[1]
+    }   
+    if( $perzi === 8 ){
+        $perzi3 = randoms0[0]
+    }
+    if( $perzi === 9 ){
+        $perzi3 = randoms0[1]
+    }
+    if( $perzi === 10 ){
+        $perzi3 = randoms0[2]
+    }
+    if( $perzi === 11 ){
+        $perzi3 = randoms0[3]
+    }
+    if( $perzi === 12 ){
+        $perzi3 = randoms0[4]
+    }
+// カウンター＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    if( $perzi === 5 ){
+        ckec = botan2ID2.value; 
+        if( ckec === textpuul[$perzi].botan2 ){
+            ckecnber = 2
+        }             
+        Up5 = textpuul[$perzi].botanup[ckecnber];
+        Hp5 = textpuul[$perzi].botanhp[ckecnber];
+        Tp5 = textpuul[$perzi].botantp[ckecnber];
+    }
+    // HP
+    if( $perzi === 6 ){
+        ckec = botan2ID2.value;      
+        if( ckec === hppuul[$perzi2].botan2 ){
+            ckecnber = 2
+        }              
+        Up6 = hppuul[$perzi2].botanup[ckecnber];
+        Hp6 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp6 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    if( $perzi === 7 ){
+        ckec = botan2ID2.value;      
+        if( ckec === hppuul[$perzi2].botan2 ){
+            ckecnber = 2
+        }        
+        Up7 = hppuul[$perzi2].botanup[ckecnber];
+        Hp7 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp7 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    // 計算
+    if( $perzi === 8 ){
+        ckec = botan2ID2.value; 
+        if( ckec === hp2puul[ransu].botan2 ){
+            ckecnber = 2
+        }        
+        Up8 = hp2puul[ransu].botanup[ckecnber];
+        Hp8 = hp2puul[ransu].botanhp[ckecnber];
+        Tp8 = hp2puul[ransu].botantp[ckecnber];
+    }
+    // UT
+    if( $perzi === 9 ){
+        ckec = botan2ID2.value;
+        if( ckec === utpuul[$perzi3].botanID2 ){
+            ckecnber = 2
+        }         
+        Up9 = utpuul[$perzi3].botanup[ckecnber];
+        Hp9 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp9 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 10 ){
+        ckec = botan2ID2.value;
+        if( ckec === utpuul[$perzi3].botan2 ){
+            ckecnber = 2
+        }         
+        Up10 = utpuul[$perzi3].botanup[ckecnber];
+        Hp10 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp10 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 11 ){
+        ckec = botan2ID2.value;      
+        if( ckec === utpuul[$perzi3].botan2 ){
+            ckecnber = 2
+        }           
+        Up11 = utpuul[$perzi3].botanup[ckecnber];
+        Hp11 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp11 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 12 ){
+        ckec = botan2ID2.value;  
+        if( ckec === utpuul[$perzi3].botan2 ){
+            ckecnber = 2
+        }          
+        Up12 = utpuul[$perzi3].botanup[ckecnber];
+        Hp12 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp12 = utpuul[$perzi3].botantp[ckecnber];
+    }
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝カウンタ＝
+    $perzi++;
+    if($perzi < 8 ){
+        $input1.setAttribute("id", hppuul[$perzi2].textboxID);
+        botan0ID1.setAttribute("id", hppuul[$perzi2].botanID0);
+        botan0ID1.setAttribute("value", hppuul[$perzi2].botan0);
+        botan1ID1.setAttribute("id", hppuul[$perzi2].botanID1);
+        botan1ID1.setAttribute("value", hppuul[$perzi2].botan1);
+        botan2ID1.setAttribute("id", hppuul[$perzi2].botanID2);
+        botan2ID1.setAttribute("value", hppuul[$perzi2].botan2);
+        botan3ID1.setAttribute("id", hppuul[$perzi2].botanID3);
+        botan3ID1.setAttribute("value", hppuul[$perzi2].botan3);
+        botan4ID1.setAttribute("id", hppuul[$perzi2].botanID4);
+        botan4ID1.setAttribute("value", hppuul[$perzi2].botan4);
+        // 番号
+        $nannberID.textContent = hppuul[$perzi2].mondaiban;
+        // タイトル
+        $titleID.textContent = hppuul[$perzi2].taitoruna;
+        // 回答ボックス
+        let numbox = hppuul[$perzi2].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hppuul[$perzi2].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hppuul[$perzi2].botan_on_off0;
+        let numbut1 = hppuul[$perzi2].botan_on_off1;
+        let numbut2 = hppuul[$perzi2].botan_on_off2;
+        let numbut3 = hppuul[$perzi2].botan_on_off3;
+        let numbut4 = hppuul[$perzi2].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hppuul[$perzi2].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
+    }
+    if($perzi === 8 ){
+        $input1.setAttribute("id", hp2puul[ransu].textboxID);
+        botan0ID1.setAttribute("id", hp2puul[ransu].botanID0);
+        botan0ID1.setAttribute("value", hp2puul[ransu].botan0);
+        botan1ID1.setAttribute("id", hp2puul[ransu].botanID1);
+        botan1ID1.setAttribute("value", hp2puul[ransu].botan1);
+        botan2ID1.setAttribute("id", hp2puul[ransu].botanID2);
+        botan2ID1.setAttribute("value", hp2puul[ransu].botan2);
+        botan3ID1.setAttribute("id", hp2puul[ransu].botanID3);
+        botan3ID1.setAttribute("value", hp2puul[ransu].botan3);
+        botan4ID1.setAttribute("id", hp2puul[ransu].botanID4);
+        botan4ID1.setAttribute("value", hp2puul[ransu].botan4);
+        // 番号
+        $nannberID.textContent = hp2puul[ransu].mondaiban;
+        // タイトル
+        $titleID.textContent = hp2puul[ransu].taitoruna;
+        // 回答ボックス
+        let numbox = hp2puul[ransu].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hp2puul[ransu].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hp2puul[ransu].botan_on_off0;
+        let numbut1 = hp2puul[ransu].botan_on_off1;
+        let numbut2 = hp2puul[ransu].botan_on_off2;
+        let numbut3 = hp2puul[ransu].botan_on_off3;
+        let numbut4 = hp2puul[ransu].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hp2puul[ransu].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
+    }
+    if( $perzi > 8 ){
+        if( $perzi < 13 ){ 
+            $input1.setAttribute("id", utpuul[$perzi3].textboxID);
+            botan0ID1.setAttribute("id", utpuul[$perzi3].botanID0);
+            botan0ID1.setAttribute("value", utpuul[$perzi3].botan0);
+            botan1ID1.setAttribute("id", utpuul[$perzi3].botanID1);
+            botan1ID1.setAttribute("value", utpuul[$perzi3].botan1);
+            botan2ID1.setAttribute("id", utpuul[$perzi3].botanID2);
+            botan2ID1.setAttribute("value", utpuul[$perzi3].botan2);
+            botan3ID1.setAttribute("id", utpuul[$perzi3].botanID3);
+            botan3ID1.setAttribute("value", utpuul[$perzi3].botan3);
+            botan4ID1.setAttribute("id", utpuul[$perzi3].botanID4);
+            botan4ID1.setAttribute("value", utpuul[$perzi3].botan4);
+            // 番号
+            $nannberID.textContent = utpuul[$perzi3].mondaiban;
+            // タイトル
+            $titleID.textContent = utpuul[$perzi3].taitoruna;
+            // 回答ボックス
+            let numbox = utpuul[$perzi3].textbox_on_off;
+            if( numbox > 0 ) {
+                $textboxID.style.display = "block";
+            }else{
+                $textboxID.style.display = "none" ;
+            }
+            // 問題ボックス
+            $mondaiID.textContent = utpuul[$perzi3].monndaina;
+        
+            // ボタンBOX
+            let numbut0 = utpuul[$perzi3].botan_on_off0;
+            let numbut1 = utpuul[$perzi3].botan_on_off1;
+            let numbut2 = utpuul[$perzi3].botan_on_off2;
+            let numbut3 = utpuul[$perzi3].botan_on_off3;
+            let numbut4 = utpuul[$perzi3].botan_on_off4;
+            if( numbut0 < 1 ) {
+                botan0ID.style.display="none";
+            }else{
+                botan0ID.style.display="block";
+            }
+            if( numbut1 < 1 ) {
+                botan1ID.style.display="none";
+            }else{
+                botan1ID.style.display="block";
+            }    
+            if( numbut2 < 1 ) {
+                botan2ID.style.display="none";
+            }else{
+                botan2ID.style.display="block";
+            }    
+            if( numbut3 < 1 ) {
+                botan3ID.style.display="none";
+            }else{
+                botan3ID.style.display="block";
+            }
+            if( numbut4 < 1 ) {
+                botan4ID.style.display="none";
+            }else{
+                botan4ID.style.display="block";
+            }
+        
+            let numnex = utpuul[$perzi3].next_no_off;
+            if( numnex < 1 ) {
+                nexID.style.display="none";
+            }else{
+                nexID.style.display="block";
+            }
+        }
+        if( $perzi === 13 ){
+            // 番号
+            $nannberID.textContent = "";
+            // タイトル
+            $titleID.textContent = "";
+            // 回答ボックス
+            $textboxID.style.display = "none" ;
+            // 問題ボックス
+            $mondaiID.textContent = ""; 
+            // ボタンBOX
+            botan0ID.style.display="none";
+            botan1ID.style.display="none";
+            botan2ID.style.display="none";
+            botan3ID.style.display="none";
+            botan4ID.style.display="none";
+            nexID.style.display="none";
+            botannAA.style.display="block";
+        } 
+    } 
+});
+
+botan3ID2.addEventListener('click', () => {     
+    if( $perzi === 5 ){
+        $perzi2 = randoms[0]
+    }
+    if( $perzi === 6 ){
+        $perzi2 = randoms[1]
+    }   
+    if( $perzi === 8 ){
+        $perzi3 = randoms0[0]
+    }
+    if( $perzi === 9 ){
+        $perzi3 = randoms0[1]
+    }
+    if( $perzi === 10 ){
+        $perzi3 = randoms0[2]
+    }
+    if( $perzi === 11 ){
+        $perzi3 = randoms0[3]
+    }
+    if( $perzi === 12 ){
+        $perzi3 = randoms0[4]
+    }
+// カウンター＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    if( $perzi === 5 ){
+        ckec = botan3ID2.value;     
+        if( ckec === textpuul[$perzi].botan3 ){
+            ckecnber = 3
+        }     
+        Up5 = textpuul[$perzi].botanup[ckecnber];
+        Hp5 = textpuul[$perzi].botanhp[ckecnber];
+        Tp5 = textpuul[$perzi].botantp[ckecnber];
+    }
+    // HP
+    if( $perzi === 6 ){
+        ckec = botan3ID2.value;
+        if( ckec === hppuul[$perzi2].botan3 ){
+            ckecnber = 3
+        }  
+        Up6 = hppuul[$perzi2].botanup[ckecnber];
+        Hp6 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp6 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    if( $perzi === 7 ){
+        ckec = botan3ID2.value;  
+        if( ckec === hppuul[$perzi2].botan3 ){
+            ckecnber = 3
+        }   
+        Up7 = hppuul[$perzi2].botanup[ckecnber];
+        Hp7 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp7 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    // 計算
+    if( $perzi === 8 ){
+        ckec = botan3ID2.value;  
+        if( ckec === hp2puul[ransu].botan3 ){
+            ckecnber = 3
+        }
+        Up8 = hp2puul[ransu].botanup[ckecnber];
+        Hp8 = hp2puul[ransu].botanhp[ckecnber];
+        Tp8 = hp2puul[ransu].botantp[ckecnber];
+    }
+    // UT
+    if( $perzi === 9 ){
+        ckec = botan3ID2.value;      
+        if( ckec === utpuul[$perzi3].botan3 ){
+            ckecnber = 3
+        }
+        Up9 = utpuul[$perzi3].botanup[ckecnber];
+        Hp9 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp9 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 10 ){
+        ckec = botan3ID2.value;   
+        if( ckec === utpuul[$perzi3].botan3 ){
+            ckecnber = 3
+        }
+        Up10 = utpuul[$perzi3].botanup[ckecnber];
+        Hp10 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp10 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 11 ){
+        ckec = botan3ID2.value;   
+        if( ckec === utpuul[$perzi3].botan3 ){
+            ckecnber = 3
+        }
+        Up11 = utpuul[$perzi3].botanup[ckecnber];
+        Hp11 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp11 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 12 ){
+        ckec = botan3ID2.value;        
+        if( ckec === utpuul[$perzi3].botan3 ){
+            ckecnber = 3
+        }
+        Up12 = utpuul[$perzi3].botanup[ckecnber];
+        Hp12 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp12 = utpuul[$perzi3].botantp[ckecnber];
+    }
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝カウンタ＝
+    $perzi++;
+    if($perzi < 8 ){
+        $input1.setAttribute("id", hppuul[$perzi2].textboxID);
+        botan0ID1.setAttribute("id", hppuul[$perzi2].botanID0);
+        botan0ID1.setAttribute("value", hppuul[$perzi2].botan0);
+        botan1ID1.setAttribute("id", hppuul[$perzi2].botanID1);
+        botan1ID1.setAttribute("value", hppuul[$perzi2].botan1);
+        botan2ID1.setAttribute("id", hppuul[$perzi2].botanID2);
+        botan2ID1.setAttribute("value", hppuul[$perzi2].botan2);
+        botan3ID1.setAttribute("id", hppuul[$perzi2].botanID3);
+        botan3ID1.setAttribute("value", hppuul[$perzi2].botan3);
+        botan4ID1.setAttribute("id", hppuul[$perzi2].botanID4);
+        botan4ID1.setAttribute("value", hppuul[$perzi2].botan4);
+        // 番号
+        $nannberID.textContent = hppuul[$perzi2].mondaiban;
+        // タイトル
+        $titleID.textContent = hppuul[$perzi2].taitoruna;
+        // 回答ボックス
+        let numbox = hppuul[$perzi2].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hppuul[$perzi2].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hppuul[$perzi2].botan_on_off0;
+        let numbut1 = hppuul[$perzi2].botan_on_off1;
+        let numbut2 = hppuul[$perzi2].botan_on_off2;
+        let numbut3 = hppuul[$perzi2].botan_on_off3;
+        let numbut4 = hppuul[$perzi2].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hppuul[$perzi2].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
+    }
+    if($perzi === 8 ){
+        $input1.setAttribute("id", hp2puul[ransu].textboxID);
+        botan0ID1.setAttribute("id", hp2puul[ransu].botanID0);
+        botan0ID1.setAttribute("value", hp2puul[ransu].botan0);
+        botan1ID1.setAttribute("id", hp2puul[ransu].botanID1);
+        botan1ID1.setAttribute("value", hp2puul[ransu].botan1);
+        botan2ID1.setAttribute("id", hp2puul[ransu].botanID2);
+        botan2ID1.setAttribute("value", hp2puul[ransu].botan2);
+        botan3ID1.setAttribute("id", hp2puul[ransu].botanID3);
+        botan3ID1.setAttribute("value", hp2puul[ransu].botan3);
+        botan4ID1.setAttribute("id", hp2puul[ransu].botanID4);
+        botan4ID1.setAttribute("value", hp2puul[ransu].botan4);
+        // 番号
+        $nannberID.textContent = hp2puul[ransu].mondaiban;
+        // タイトル
+        $titleID.textContent = hp2puul[ransu].taitoruna;
+        // 回答ボックス
+        let numbox = hp2puul[ransu].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hp2puul[ransu].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hp2puul[ransu].botan_on_off0;
+        let numbut1 = hp2puul[ransu].botan_on_off1;
+        let numbut2 = hp2puul[ransu].botan_on_off2;
+        let numbut3 = hp2puul[ransu].botan_on_off3;
+        let numbut4 = hp2puul[ransu].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hp2puul[ransu].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
+    }
+    if( $perzi > 8 ){
+        if( $perzi < 13 ){ 
+            $input1.setAttribute("id", utpuul[$perzi3].textboxID);
+            botan0ID1.setAttribute("id", utpuul[$perzi3].botanID0);
+            botan0ID1.setAttribute("value", utpuul[$perzi3].botan0);
+            botan1ID1.setAttribute("id", utpuul[$perzi3].botanID1);
+            botan1ID1.setAttribute("value", utpuul[$perzi3].botan1);
+            botan2ID1.setAttribute("id", utpuul[$perzi3].botanID2);
+            botan2ID1.setAttribute("value", utpuul[$perzi3].botan2);
+            botan3ID1.setAttribute("id", utpuul[$perzi3].botanID3);
+            botan3ID1.setAttribute("value", utpuul[$perzi3].botan3);
+            botan4ID1.setAttribute("id", utpuul[$perzi3].botanID4);
+            botan4ID1.setAttribute("value", utpuul[$perzi3].botan4);
+            // 番号
+            $nannberID.textContent = utpuul[$perzi3].mondaiban;
+            // タイトル
+            $titleID.textContent = utpuul[$perzi3].taitoruna;
+            // 回答ボックス
+            let numbox = utpuul[$perzi3].textbox_on_off;
+            if( numbox > 0 ) {
+                $textboxID.style.display = "block";
+            }else{
+                $textboxID.style.display = "none" ;
+            }
+            // 問題ボックス
+            $mondaiID.textContent = utpuul[$perzi3].monndaina;
+        
+            // ボタンBOX
+            let numbut0 = utpuul[$perzi3].botan_on_off0;
+            let numbut1 = utpuul[$perzi3].botan_on_off1;
+            let numbut2 = utpuul[$perzi3].botan_on_off2;
+            let numbut3 = utpuul[$perzi3].botan_on_off3;
+            let numbut4 = utpuul[$perzi3].botan_on_off4;
+            if( numbut0 < 1 ) {
+                botan0ID.style.display="none";
+            }else{
+                botan0ID.style.display="block";
+            }
+            if( numbut1 < 1 ) {
+                botan1ID.style.display="none";
+            }else{
+                botan1ID.style.display="block";
+            }    
+            if( numbut2 < 1 ) {
+                botan2ID.style.display="none";
+            }else{
+                botan2ID.style.display="block";
+            }    
+            if( numbut3 < 1 ) {
+                botan3ID.style.display="none";
+            }else{
+                botan3ID.style.display="block";
+            }
+            if( numbut4 < 1 ) {
+                botan4ID.style.display="none";
+            }else{
+                botan4ID.style.display="block";
+            }
+        
+            let numnex = utpuul[$perzi3].next_no_off;
+            if( numnex < 1 ) {
+                nexID.style.display="none";
+            }else{
+                nexID.style.display="block";
+            }
+        }
+        if( $perzi === 13 ){
+            // 番号
+            $nannberID.textContent = "";
+            // タイトル
+            $titleID.textContent = "";
+            // 回答ボックス
+            $textboxID.style.display = "none" ;
+            // 問題ボックス
+            $mondaiID.textContent = ""; 
+            // ボタンBOX
+            botan0ID.style.display="none";
+            botan1ID.style.display="none";
+            botan2ID.style.display="none";
+            botan3ID.style.display="none";
+            botan4ID.style.display="none";
+            nexID.style.display="none";
+            botannAA.style.display="block";
+        } 
+    }
+});
+
+botan4ID2.addEventListener('click', () => {     
+    if( $perzi === 5 ){
+        $perzi2 = randoms[0]
+    }
+    if( $perzi === 6 ){
+        $perzi2 = randoms[1]
+    }   
+    if( $perzi === 8 ){
+        $perzi3 = randoms0[0]
+    }
+    if( $perzi === 9 ){
+        $perzi3 = randoms0[1]
+    }
+    if( $perzi === 10 ){
+        $perzi3 = randoms0[2]
+    }
+    if( $perzi === 11 ){
+        $perzi3 = randoms0[3]
+    }
+    if( $perzi === 12 ){
+        $perzi3 = randoms0[4]
+    }
+// カウンター＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    if( $perzi === 5 ){
+        ckec = botan4ID2.value;
+        if( ckec === textpuul[$perzi].botan4 ){
+            ckecnber = 4
+        }        
+        Up5 = textpuul[$perzi].botanup[ckecnber];
+        Hp5 = textpuul[$perzi].botanhp[ckecnber];
+        Tp5 = textpuul[$perzi].botantp[ckecnber];
+    }
+    // HP
+    if( $perzi === 6 ){
+        ckec = botan4ID2.value;
+        if( ckec === hppuul[$perzi2].botan4 ){
+            ckecnber = 4
+        }        
+        Up6 = hppuul[$perzi2].botanup[ckecnber];
+        Hp6 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp6 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    if( $perzi === 7 ){
+        ckec = botan4ID2.value;
+        if( ckec === hppuul[$perzi2].botan4 ){
+            ckecnber = 4
+        }        
+        Up7 = hppuul[$perzi2].botanup[ckecnber];
+        Hp7 = hppuul[$perzi2].botanhp[ckecnber];
+        Tp7 = hppuul[$perzi2].botantp[ckecnber];
+    }
+    // 計算
+    if( $perzi === 8 ){
+        if( ckec === hp2puul[ransu].botan4 ){
+            ckecnber = 4
+        }     
+        Up8 = hp2puul[ransu].botanup[ckecnber];
+        Hp8 = hp2puul[ransu].botanhp[ckecnber];
+        Tp8 = hp2puul[ransu].botantp[ckecnber];
+    }
+    // UT
+    if( $perzi === 9 ){
+        ckec = botan4ID2.value;
+        if( ckec === utpuul[$perzi3].botan4 ){
+            ckecnber = 4
+        }     
+        Up9 = utpuul[$perzi3].botanup[ckecnber];
+        Hp9 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp9 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 10 ){
+        ckec = botan4ID2.value;
+        if( ckec === utpuul[$perzi3].botan4 ){
+            ckecnber = 4
+        }     
+        Up10 = utpuul[$perzi3].botanup[ckecnber];
+        Hp10 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp10 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 11 ){
+        ckec = botan4ID2.value;
+        if( ckec === utpuul[$perzi3].botan4 ){
+            ckecnber = 4
+        }     
+        Up11 = utpuul[$perzi3].botanup[ckecnber];
+        Hp11 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp11 = utpuul[$perzi3].botantp[ckecnber];
+    }
+    if( $perzi === 12 ){
+        ckec = botan4ID2.value;
+        if( ckec === utpuul[$perzi3].botan4 ){
+            ckecnber = 4
+        }     
+        Up12 = utpuul[$perzi3].botanup[ckecnber];
+        Hp12 = utpuul[$perzi3].botanhp[ckecnber];
+        Tp12 = utpuul[$perzi3].botantp[ckecnber];
+    }
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝カウンタ＝
+    $perzi++;
+    if($perzi < 8 ){
+        $input1.setAttribute("id", hppuul[$perzi2].textboxID);
+        botan0ID1.setAttribute("id", hppuul[$perzi2].botanID0);
+        botan0ID1.setAttribute("value", hppuul[$perzi2].botan0);
+        botan1ID1.setAttribute("id", hppuul[$perzi2].botanID1);
+        botan1ID1.setAttribute("value", hppuul[$perzi2].botan1);
+        botan2ID1.setAttribute("id", hppuul[$perzi2].botanID2);
+        botan2ID1.setAttribute("value", hppuul[$perzi2].botan2);
+        botan3ID1.setAttribute("id", hppuul[$perzi2].botanID3);
+        botan3ID1.setAttribute("value", hppuul[$perzi2].botan3);
+        botan4ID1.setAttribute("id", hppuul[$perzi2].botanID4);
+        botan4ID1.setAttribute("value", hppuul[$perzi2].botan4);
+        // 番号
+        $nannberID.textContent = hppuul[$perzi2].mondaiban;
+        // タイトル
+        $titleID.textContent = hppuul[$perzi2].taitoruna;
+        // 回答ボックス
+        let numbox = hppuul[$perzi2].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hppuul[$perzi2].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hppuul[$perzi2].botan_on_off0;
+        let numbut1 = hppuul[$perzi2].botan_on_off1;
+        let numbut2 = hppuul[$perzi2].botan_on_off2;
+        let numbut3 = hppuul[$perzi2].botan_on_off3;
+        let numbut4 = hppuul[$perzi2].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hppuul[$perzi2].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
+    }
+    if($perzi === 8 ){
+        $input1.setAttribute("id", hp2puul[ransu].textboxID);
+        botan0ID1.setAttribute("id", hp2puul[ransu].botanID0);
+        botan0ID1.setAttribute("value", hp2puul[ransu].botan0);
+        botan1ID1.setAttribute("id", hp2puul[ransu].botanID1);
+        botan1ID1.setAttribute("value", hp2puul[ransu].botan1);
+        botan2ID1.setAttribute("id", hp2puul[ransu].botanID2);
+        botan2ID1.setAttribute("value", hp2puul[ransu].botan2);
+        botan3ID1.setAttribute("id", hp2puul[ransu].botanID3);
+        botan3ID1.setAttribute("value", hp2puul[ransu].botan3);
+        botan4ID1.setAttribute("id", hp2puul[ransu].botanID4);
+        botan4ID1.setAttribute("value", hp2puul[ransu].botan4);
+        // 番号
+        $nannberID.textContent = hp2puul[ransu].mondaiban;
+        // タイトル
+        $titleID.textContent = hp2puul[ransu].taitoruna;
+        // 回答ボックス
+        let numbox = hp2puul[ransu].textbox_on_off;
+        if( numbox > 0 ) {
+            $textboxID.style.display = "block";
+        }else{
+            $textboxID.style.display = "none" ;
+        }
+        // 問題ボックス
+        $mondaiID.textContent = hp2puul[ransu].monndaina;
+    
+        // ボタンBOX
+        let numbut0 = hp2puul[ransu].botan_on_off0;
+        let numbut1 = hp2puul[ransu].botan_on_off1;
+        let numbut2 = hp2puul[ransu].botan_on_off2;
+        let numbut3 = hp2puul[ransu].botan_on_off3;
+        let numbut4 = hp2puul[ransu].botan_on_off4;
+        if( numbut0 < 1 ) {
+            botan0ID.style.display="none";
+        }else{
+            botan0ID.style.display="block";
+        }
+        if( numbut1 < 1 ) {
+            botan1ID.style.display="none";
+        }else{
+            botan1ID.style.display="block";
+        }    
+        if( numbut2 < 1 ) {
+            botan2ID.style.display="none";
+        }else{
+            botan2ID.style.display="block";
+        }    
+        if( numbut3 < 1 ) {
+            botan3ID.style.display="none";
+        }else{
+            botan3ID.style.display="block";
+        }
+        if( numbut4 < 1 ) {
+            botan4ID.style.display="none";
+        }else{
+            botan4ID.style.display="block";
+        }
+    
+        let numnex = hp2puul[ransu].next_no_off;
+        if( numnex < 1 ) {
+            nexID.style.display="none";
+        }else{
+            nexID.style.display="block";
+        }
+    }
+    if( $perzi > 8 ){
+        if( $perzi < 13 ){ 
+            $input1.setAttribute("id", utpuul[$perzi3].textboxID);
+            botan0ID1.setAttribute("id", utpuul[$perzi3].botanID0);
+            botan0ID1.setAttribute("value", utpuul[$perzi3].botan0);
+            botan1ID1.setAttribute("id", utpuul[$perzi3].botanID1);
+            botan1ID1.setAttribute("value", utpuul[$perzi3].botan1);
+            botan2ID1.setAttribute("id", utpuul[$perzi3].botanID2);
+            botan2ID1.setAttribute("value", utpuul[$perzi3].botan2);
+            botan3ID1.setAttribute("id", utpuul[$perzi3].botanID3);
+            botan3ID1.setAttribute("value", utpuul[$perzi3].botan3);
+            botan4ID1.setAttribute("id", utpuul[$perzi3].botanID4);
+            botan4ID1.setAttribute("value", utpuul[$perzi3].botan4);
+            // 番号
+            $nannberID.textContent = utpuul[$perzi3].mondaiban;
+            // タイトル
+            $titleID.textContent = utpuul[$perzi3].taitoruna;
+            // 回答ボックス
+            let numbox = utpuul[$perzi3].textbox_on_off;
+            if( numbox > 0 ) {
+                $textboxID.style.display = "block";
+            }else{
+                $textboxID.style.display = "none" ;
+            }
+            // 問題ボックス
+            $mondaiID.textContent = utpuul[$perzi3].monndaina;
+        
+            // ボタンBOX
+            let numbut0 = utpuul[$perzi3].botan_on_off0;
+            let numbut1 = utpuul[$perzi3].botan_on_off1;
+            let numbut2 = utpuul[$perzi3].botan_on_off2;
+            let numbut3 = utpuul[$perzi3].botan_on_off3;
+            let numbut4 = utpuul[$perzi3].botan_on_off4;
+            if( numbut0 < 1 ) {
+                botan0ID.style.display="none";
+            }else{
+                botan0ID.style.display="block";
+            }
+            if( numbut1 < 1 ) {
+                botan1ID.style.display="none";
+            }else{
+                botan1ID.style.display="block";
+            }    
+            if( numbut2 < 1 ) {
+                botan2ID.style.display="none";
+            }else{
+                botan2ID.style.display="block";
+            }    
+            if( numbut3 < 1 ) {
+                botan3ID.style.display="none";
+            }else{
+                botan3ID.style.display="block";
+            }
+            if( numbut4 < 1 ) {
+                botan4ID.style.display="none";
+            }else{
+                botan4ID.style.display="block";
+            }
+        
+            let numnex = utpuul[$perzi3].next_no_off;
+            if( numnex < 1 ) {
+                nexID.style.display="none";
+            }else{
+                nexID.style.display="block";
+            }
+        }
+        if( $perzi === 13 ){
+            // 番号
+            $nannberID.textContent = "";
+            // タイトル
+            $titleID.textContent = "";
+            // 回答ボックス
+            $textboxID.style.display = "none" ;
+            // 問題ボックス
+            $mondaiID.textContent = ""; 
+            // ボタンBOX
+            botan0ID.style.display="none";
+            botan1ID.style.display="none";
+            botan2ID.style.display="none";
+            botan3ID.style.display="none";
+            botan4ID.style.display="none";
+            nexID.style.display="none";
+            botannAA.style.display="block";
+        } 
+    }
+});
+// 結果ボタン
+botannAA2.addEventListener('click', () => {
+    if(kakuninbutjs2 > 370 ){
+        Up2 = 0;
+        Hp2 = 0;
+        Tp2 = 1;
+    }else if( 370 >= kakuninbutjs2 >= 360 ){
+        Up2 = 0;
+        Hp2 = 0;
+        Tp2 = 0;
+    }else{
+        Up2 = 1;
+        Hp2 = 0;
+        Tp2 = 1;
+    };
+
+    if( kakuninbutjs3 > 85){
+        Up3 = 0;
+        Hp3 = 0;
+        Tp3 = 1; 
+    }else if( 85 >= kakuninbutjs3 >= 65){
+        Up3 = 0;
+        Hp3 = 0;
+        Tp3 = 0; 
+    }else{
+        Up3 = 0;
+        Hp3 = 0;
+        Tp3 = 1; 
+    };
+
+    if( kakuninbutjs4 > 6 ){
+        Up4 = 0;
+        Hp4 = 0;
+        Tp4 = 0; 
+    }else{
+        Up4 = 1;
+        Hp4 = 0;
+        Tp4 = 1;  
+    };
+
+    AllUp = Up2 + Up3 + Up4 + Up5 + Up6 + Up7 + Up8 + Up9 + Up10 + Up11 + Up12;
+    AllHp = Hp2 + Hp3 + Hp4 + Hp5 + Hp6 + Hp7 + Hp8 + Hp9 + Hp10 + Hp11 + Hp12;
+    AllTp = Tp2 + Tp3 + Tp4 + Tp5 + Tp6 + Tp7 + Tp8 + Tp9 + Tp10 + Tp11 + Tp12;
+
+    AllUHT = AllUp + AllHp + AllTp;
+    AllUH = AllUp + AllHp;
+
+// 総合結果
+    const jodsougo0 = document.getElementById("jodsougo0");
+    jodsougo0.innerText = "総合メッセージ";
+    const jodsougo1 = document.getElementById("jodsougo1");
+    if( AllUHT === 17 ){
+        jodsougo1.innerText = kekkatext[7];
+    }
+    if( 16 >= AllUHT >= 14 ){
+        jodsougo1.innerText = kekkatext[6];
+    }    
+    if( 13 >= AllUHT >= 11 ){
+        jodsougo1.innerText = kekkatext[5];
+    }    
+    if( AllUHT === 10){
+        jodsougo1.innerText = kekkatext[4];
+    }   
+    if( 9 >= AllUHT >= 7 ){
+        jodsougo1.innerText = kekkatext[3];
+    }    
+    if( 6 >= AllUHT >= 5 ){
+        jodsougo1.innerText = kekkatext[2];
+    }    
+    if( 4 >= AllUHT >= 3 ){
+        jodsougo1.innerText = kekkatext[1];
+    }
+    if( 2 >= AllUHT >= 0 ){
+        jodsougo1.innerText = kekkatext[0];
+    }
+
+// 新しい
+    const jodnew0 = document.getElementById("jodnew0");
+    jodnew0.innerText = "新しい仕事への適性";
+    const jodnew1 = document.getElementById("jodnew1");
+    if( AllHp === 3 ){
+        if( AllUHT === 17 ){
+            jodnew1.innerText = newtext[12];
+        }
+        if( 16 >= AllUHT >= 13 ){
+            jodnew1.innerText = newtext[9];
+        }
+        if( 12 >= AllUHT >= 10 ){
+            jodnew1.innerText = newtext[4];
+        }
+        if( 9 >= AllUHT >= 7 ){
+            jodnew1.innerText = newtext[11];
+        }
+        if( 6 >= AllUHT >= 3 ){
+            jodnew1.innerText = newtext[10];
+        }
+    }
+    if( AllHp === 2 ){
+        if( 16 >= AllUHT >= 13 ){
+            jodnew1.innerText = newtext[9];
+        }
+        if( 12 >= AllUHT >= 11 ){
+            jodnew1.innerText = newtext[5];
+        }
+        if( 10 >= AllUHT >= 9 ){
+            jodnew1.innerText = newtext[8];
+        }
+        if( 8 >= AllUHT >= 5 ){
+            jodnew1.innerText = newtext[7];
+        }
+        if( 4 >= AllUHT >= 0 ){
+            jodnew1.innerText = newtext[6];
+        }
+    }
+    if( AllHp === 1 ){
+        if( 15 >= AllUHT >= 10 ){
+            jodnew1.innerText = newtext[5];
+        }
+        if( 9 >= AllUHT >= 7 ){
+            jodnew1.innerText = newtext[3];
+        }
+        if( 6 >= AllUHT >= 4 ){
+            jodnew1.innerText = newtext[2];
+        }
+        if( 3 >= AllUHT >= 0 ){
+            jodnew1.innerText = newtext[0];
+        }
+    }
+    if( AllHp === 0 ){
+        if( 14 >= AllUHT >= 9 ){
+            jodnew1.innerText = newtext[4];
+        }
+        if( 8 >= AllUHT >= 7 ){
+            jodnew1.innerText = newtext[3];
+        }
+        if( 6 >= AllUHT >= 5 ){
+            jodnew1.innerText = newtext[2];
+        }
+        if( AllUHT === 4 ){
+            jodnew1.innerText = newtext[1];
+        }
+        if( 3 >= AllUHT >= 0 ){
+            jodnew1.innerText = newtext[0];
+        }
+    }
+// 通常勤務
+    const jodold0 = document.getElementById("jodold0");
+    jodold0.innerText = "通常の仕事への適性";
+    const jodold1 = document.getElementById("jodoid1");
+    if( AllUp === 11 ){
+        if( AllTp >= 3 ){
+            jodold1.innerText = oidtext[6];
+        }else{
+            jodold1.innerText = oidtext[5];
+        }
+    }
+    if( 10 >= AllUp >= 9 ){
+        if(AllTp >= 2 ){
+            jodold1.innerText = oidtext[5];
+        }else{
+            jodold1.innerText = oidtext[4];
+        }
+    }
+    if( 8 >= AllUp >= 7 ){
+        if( AllTp >= 3){
+            jodold1.innerText = oidtext[4];
+        }else if( 2 >= AllTp >= 1){
+            jodold1.innerText = oidtext[3];
+        }else{
+            jodold1.innerText = oidtext[2];
+        }
+    }
+    if( 6 >= AllUp >= 5 ){
+        if( AllTp >= 1){
+            jodold1.innerText = oidtext[2];
+        }else{
+            jodold1.innerText = oidtext[1];
+        }
+    }
+    if( 4 >= AllUp >= 3 ){
+        jodold1.innerText = oidtext[1];
+    }
+    if( 2 >= AllUp >= 0 ){
+        if( AllUp >= 3 ){
+            jodold1.innerText = oidtext[1];
+        }else{
+            jodold1.innerText = oidtext[0];
+        }
+    }
+
+    const othretext0 = document.getElementById("othretext0");
+    othretext0.innerText = "注意点";
+    const othretext1 = document.getElementById("othretext1");
+    if( AllUp === 11 ){
+        if( AllTp >= 3 ){
+            jodoid1.innerText = oidtext[6];
+        }else{
+            jodoid1.innerText = oidtext[5];
+        }
+    }
+    if( 10 >= AllUp >= 9 ){
+        if(AllTp >= 2 ){
+            jodoid1.innerText = oidtext[5];
+        }else{
+            jodthen1.innerText = oidtext[4];
+        }
+    }
+    if( 8 >= AllUp >= 7 ){
+        if( AllTp >= 3){
+            jodoid1.innerText = oidtext[4];
+        }else if( 2 >= AllTp >= 1){
+            jodoid1.innerText = oidtext[3];
+        }else{
+            jodoid1.innerText = oidtext[2];
+        }
+    }
+    if( 6 >= AllUp >= 5 ){
+        if( AllTp >= 1){
+            jodoid1.innerText = oidtext[2];
+        }else{
+            jodoid1.innerText = oidtext[1];
+        }
+    }
+    if( 4 >= AllUp >= 3 ){
+        jodoid1.innerText = oidtext[1];
+    }
+    if( 2 >= AllUp >= 0 ){
+        if( AllUp >= 3 ){
+            jodoid1.innerText = oidtext[1];
+        }else{
+            jodoid1.innerText = oidtext[0];
+        }
+    }
+
+});
+
+
+// ＝＝＝＝＝＝＝＝＝＝＝チェック域＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+botannBB2.addEventListener('click', () => {
+    if(kakuninbutjs2 > 370 ){
+        Up2 = 0;
+        Hp2 = 0;
+        Tp2 = 1;
+    }else if( 370 >= kakuninbutjs2 >= 360 ){
+        Up2 = 0;
+        Hp2 = 0;
+        Tp2 = 0;
+    }else{
+        Up2 = 1;
+        Hp2 = 0;
+        Tp2 = 0;
+    };
+    
+    if( kakuninbutjs3 > 85){
+        Up3 = 0;
+        Hp3 = 0;
+        Tp3 = 1; 
+    }else if( 85 >= kakuninbutjs3 >= 65){
+        Up3 = 0;
+        Hp3 = 0;
+        Tp3 = 0; 
+    }else{
+        Up3 = 0;
+        Hp3 = 0;
+        Tp3 = 1; 
+    };
+    
+    if( kakuninbutjs4 > 6 ){
+        Up4 = 0;
+        Hp4 = 0;
+        Tp4 = 0; 
+    }else{
+        Up4 = 1;
+        Hp4 = 0;
+        Tp4 = 1;  
+    };
+    
+    AllUp = Up2 + Up3 + Up4 + Up5 + Up6 + Up7 + Up8 + Up9 + Up10 + Up11 + Up12;
+    AllHp = Hp2 + Hp3 + Hp4 + Hp5 + Hp6 + Hp7 + Hp8 + Hp9 + Hp10 + Hp11 + Hp12;
+    AllTp = Tp2 + Tp3 + Tp4 + Tp5 + Tp6 + Tp7 + Tp8 + Tp9 + Tp10 + Tp11 + Tp12;
+    
+    AllUHT = AllUp + AllHp + AllTp;
+    AllUH = AllUp + AllHp;
+
+    const AllUp1 = document.getElementById("AllUpID");
+    const AllHp1 = document.getElementById("AllHpID");
+    const AllTp1 = document.getElementById("AllTpID");
+    const AllUHT1 = document.getElementById("AllUHTID");
+    const AllUH1 = document.getElementById("AllUHID");
+    AllHp1.innerText = AllHp;
+    AllUp1.innerText = AllUp;
+    AllTp1.innerText = AllTp;
+    AllUHT1.innerText = AllUHT;
+    AllUH1.innerText = AllUH;
+});
 kakbotID.addEventListener('click', () => {
-    const kakuninbut0 = document.getElementById("0");
-    kakuninbut0.innerText = kakuninbutjs0 ;
+// ランダムですよ
+    const kakuninbut9 = document.getElementById("13");
+    kakuninbut9.innerText = ransu;
+    const kakuninbut10 = document.getElementById("14");
+    kakuninbut10.innerText = randoms;
+    const kakuninbut11 = document.getElementById("15");
+    kakuninbut11.innerText = randoms0;
+
+// ID
     const kakuninbut1 = document.getElementById("1");
     kakuninbut1.innerText = kakuninbutjs1;
+// 体温
     const kakuninbut2 = document.getElementById("2");
     kakuninbut2.innerText = kakuninbutjs2;
+// 脈拍
+    const kakuninbut3 = document.getElementById("3");
+    kakuninbut3.innerText = kakuninbutjs3;
+//　食事 
+    const kakuninbut4 = document.getElementById("4");
+    kakuninbut4.innerText = kakuninbutjs4;
+// ボタン数値
+    const kakuninbutU5 = document.getElementById("U5");
+    kakuninbutU5.innerText = Up5;
+    const kakuninbutH5 = document.getElementById("H5");
+    kakuninbutH5.innerText = Hp5;
+    const kakuninbutT5 = document.getElementById("T5");
+    kakuninbutT5.innerText = Tp5;
+
+    const kakuninbutU6 = document.getElementById("U6");
+    kakuninbutU6.innerText = Up6;
+    const kakuninbutH6 = document.getElementById("H6");
+    kakuninbutH6.innerText = Hp6;
+    const kakuninbutT6 = document.getElementById("T6");
+    kakuninbutT6.innerText = Tp6;
+
+    const kakuninbutU7 = document.getElementById("U7");
+    kakuninbutU7.innerText = Up7;
+    const kakuninbutH7 = document.getElementById("H7");
+    kakuninbutH7.innerText = Hp7;
+    const kakuninbutT7 = document.getElementById("T7");
+    kakuninbutT7.innerText = Tp7;
+
+    const kakuninbutU8 = document.getElementById("U8");
+    kakuninbutU8.innerText = Up8;
+    const kakuninbutH8 = document.getElementById("H8");
+    kakuninbutH8.innerText = Hp8;
+    const kakuninbutT8 = document.getElementById("T8");
+    kakuninbutT8.innerText = Tp8;
+
+    const kakuninbutU9 = document.getElementById("U9");
+    kakuninbutU9.innerText = Up9;
+    const kakuninbutH9 = document.getElementById("H9");
+    kakuninbutH9.innerText = Hp9;
+    const kakuninbutT9 = document.getElementById("T9");
+    kakuninbutT9.innerText = Tp9;
+
+    const kakuninbutU10 = document.getElementById("U10");
+    kakuninbutU10.innerText = Up10;
+    const kakuninbutH10 = document.getElementById("H10");
+    kakuninbutH10.innerText = Hp10;
+    const kakuninbutT10 = document.getElementById("T10");
+    kakuninbutT10.innerText = Tp10;
+
+    const kakuninbutU11 = document.getElementById("U11");
+    kakuninbutU11.innerText = Up11;
+    const kakuninbutH11 = document.getElementById("H11");
+    kakuninbutH11.innerText = Hp11;
+    const kakuninbutT11 = document.getElementById("T11");
+    kakuninbutT11.innerText = Tp11;
+
+    const kakuninbutU12 = document.getElementById("U12");
+    kakuninbutU12.innerText = Up12;
+    const kakuninbutH12 = document.getElementById("H12");
+    kakuninbutH12.innerText = Hp12;
+    const kakuninbutT12 = document.getElementById("T12");
+    kakuninbutT12.innerText = Tp12;
+    // デバック
 });
 
 risebotID.addEventListener('click', () => {   
