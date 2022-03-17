@@ -34,7 +34,7 @@ const hppuul =  [
         mondaibanngou: "H1",
         mondaiban: "H1",
         taitoruna:"どちらの可能性が高いだろうか",
-        monndaina: "リンダは31歳、独身で、率直に意見を言い、非常に聡明である。大学では哲学を専攻した。学生時代、彼女は、人種差別や社会正義の問題に強く関心をもち、反核デモに参加していた。次の2つのうち、どちらの可能性が高いだろうか。",
+        monndaina: "リンダは31歳、独身で率直に意見を言い、非常に聡明である｡大学では哲学を専攻した。学生時代、彼女は、人種差別や社会正義の問題に強く関心をもち、反核デモに参加していた。次の2つのうち、どちらの可能性が高いだろうか。",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
         textboxID: "textboxIDh",
@@ -66,7 +66,7 @@ const hppuul =  [
         mondaibanngou: "H2",
         mondaiban: "H2",
         taitoruna:"どちらの方が高いだろうか",
-        monndaina: "A:30%の確率で10000円もらうか　B:30％の確率で3000円を3回もらえるか",
+        monndaina: "A30%の確率で10000円もらうか B30%の確率で3000円を3回もらえるか",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
         textboxID: "textboxIDh",
@@ -97,13 +97,12 @@ const hppuul =  [
         mondaibanngou: "H3",
         mondaiban: "H3",
         taitoruna:"どちらの確率が高いか",
-        monndaina: "A:非常に頭の良い女性は、自分より頭の悪い男性と結婚する確率が高い　B:非常に頭の良い女性は、自分と同じくらい頭の良い男性と結婚する確率が高い",
+        monndaina: "A非常に頭の良い女性は、自分より頭の悪い男性と結婚する確率が高い B非常に頭の良い女性は、自分と同じくらい頭の良い男性と結婚する確率が高い",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
         textboxID: "textboxIDh",
         // ボタン_on_off ボタン名前 ボタンID
         botan_on_off0: 1,
-        botan_on_off1: 1,
         botan_on_off2: 0,
         botan_on_off3: 0,
         botan_on_off4: 0,
@@ -128,7 +127,7 @@ const hppuul =  [
         mondaibanngou: "H4",
         mondaiban: "H4",
         taitoruna:"どちらの確率が高いか",
-        monndaina: "A：阪神の4番が2回ホームランを打った後、次の打席でホームランを打つ確立　　B：阪神の4番が2回ホームランを打った後、次の打席でアウトになる確立",
+        monndaina: "A阪神の4番が2回ホームランを打った後、次の打席でホームランを打つ確立 B阪神の4番が2回ホームランを打った後、次の打席でアウトになる確立",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
         textboxID: "textboxIDh",
@@ -159,7 +158,7 @@ const hppuul =  [
         mondaibanngou: "H5",
         mondaiban: "H5",
         taitoruna:"上司の行動は正しいのか",
-        monndaina: "山田は、最近調子が悪く仕事のミスも多かった、そのため、上司が叱ったところ次の日から山田のミスが減った。",
+        monndaina: "山田は、最近調子が悪く,仕事のミスも多かった、そのため、上司が叱ったところ,次の日から山田のミスが減った。",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
         textboxID: "textboxIDh",
@@ -251,8 +250,8 @@ const hppuul =  [
     },{
         mondaibanngou: "H8",
         mondaiban: "H8",
-        taitoruna:"次のボクシングの試合で確率の高い結果を予測してください",
-        monndaina: "令和の怪物といわれたボクサー上司VS無断欠勤の鬼　山田",
+        taitoruna:"次のボクシングの試合で　確率の高い結果を予測してください",
+        monndaina: "令和の怪物といわれたボクサー上司 VS 無断欠勤の鬼-山田",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
         textboxID: "textboxIDh",
@@ -283,7 +282,7 @@ const hppuul =  [
         mondaibanngou: "H9",
         mondaiban: "H9",
         taitoruna:"どちらの方が確立が高いか",
-        monndaina: "　上司は、タクシーにひき逃げにあった。その時近くにいた山田は、その地域で10％のタクシーを管理する緑タクシーであったと述べている。その後の実況見分調査で山田は、緑タクシーと、その地域の90%のタクシーを管理する青タクシーとの区別を80%の確率で判別できることがわかった。上司をひき逃げしたタクシーは、緑タクシーか青タクシーかどちらの確率が高いか",
+    monndaina: "　上司は、タクシーにひき逃げにあった。その時近くにいた山田は、その地域で10% のタクシーを管理する「緑タクシー」で あったと述べている。その後の実況見分調査で山田は、「緑タクシー」と、その地域の90%のタクシーを管理する 「青タクシー」との区別を80%の確率で判別できる ことがわかった。上司をひき逃げしたタクシーは、緑タクシーか青タクシーか　どちらの確率が高いか",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
         textboxID: "textboxIDh",
@@ -406,8 +405,8 @@ const hppuul =  [
     },{    // 睡眠 ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "H14",
         mondaiban: "H14",
-        taitoruna:"アメリカの一年間の金額を入れてください",
-        monndaina: "例：日本人のウクライナに寄付する金額の平均は8千円以上です。",
+        taitoruna:"アメリカ人の一年間の　平均寄付金額を予想してください",
+        monndaina: "例：日本人が　ウクライナに寄付した金額の平均は　8千円以上です。",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
         textboxID: "textboxIDh",
@@ -437,7 +436,7 @@ const hppuul =  [
     },{    // ご飯 ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "H15",
         mondaiban: "H15",
-        taitoruna:"インドのGDPとして正しいものはどれですか？",
+        taitoruna:"インドのGDPとして 適切ものを答えよ",
         monndaina: "例：アメリカは約2000万ドルです",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,

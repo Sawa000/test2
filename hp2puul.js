@@ -624,7 +624,7 @@ const hp2puul =  [
     },{    // N ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "2H20",
         mondaiban: "2H20",
-        taitoruna:"答えが12になる式を選んでください",
+        taitoruna:"答えが12になる式を 選んでください",
         monndaina: "",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -656,7 +656,7 @@ const hp2puul =  [
     },{    // O ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "2H21",
         mondaiban: "2H21",
-        taitoruna:"答えが-16になる式を選んでください",
+        taitoruna:"答えが-16になる式を 選んでください",
         monndaina: "",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -687,7 +687,7 @@ const hp2puul =  [
     },{
         mondaibanngou: "2H22",
         mondaiban: "2H22",
-        taitoruna:"答えがを-4になる式を選んでください",
+        taitoruna:"答えがを-4になる式を 選んでください",
         monndaina: "",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -718,7 +718,7 @@ const hp2puul =  [
     },{
         mondaibanngou: "2H23",
         mondaiban: "2H23",
-        taitoruna:"答えがを-10になる式を選んでください",
+        taitoruna:"答えがを-10になる式を 選んでください",
         monndaina: "",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -749,7 +749,7 @@ const hp2puul =  [
     },{    // I ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "2H24",
         mondaiban: "2H24",
-        taitoruna:"答えがを14になる式を選んでください",
+        taitoruna:"答えがを14になる式を 選んでください",
         monndaina: "",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -780,7 +780,7 @@ const hp2puul =  [
     },{    // J ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "2H25",
         mondaiban: "2H25",
-        taitoruna:"答えがを-9になる式を選んでください",
+        taitoruna:"答えがを-9になる式を 選んでください",
         monndaina: "",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -811,7 +811,7 @@ const hp2puul =  [
     },{    // K ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "2H26",
         mondaiban: "2H26",
-        taitoruna:"●の中に入る数字を選んでください",
+        taitoruna:"●の中に入る数字を　選んでください",
         monndaina: "-4(●+3)＝-20",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -842,7 +842,7 @@ const hp2puul =  [
     },{    // L ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "2H27",
         mondaiban: "2H27",
-        taitoruna:"●の中に入る数字を選んでください",
+        taitoruna:"●の中に入る数字を　選んでください",
         monndaina: "-5(●+2)=-15",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -873,7 +873,7 @@ const hp2puul =  [
     },{    // M ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "2H28",
         mondaiban: "2H28",
-        taitoruna:"●の中に入る数字を選んでください",
+        taitoruna:"●の中に入る数字を　選んでください",
         monndaina: "5(-●+5)=20",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -904,7 +904,7 @@ const hp2puul =  [
     },{    // N ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "2H29",
         mondaiban: "2H29",
-        taitoruna:"●の中に入る数字を選んでください",
+        taitoruna:"●の中に入る数字を　選んでください",
         monndaina: "4(-1+●)=4",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
@@ -935,7 +935,7 @@ const hp2puul =  [
     },{    // O ID タイトル番号 タイトル 問題文==========
         mondaibanngou: "2H30",
         mondaiban: "2H30",
-        taitoruna:"●の中に入る数字を選んでください",
+        taitoruna:"●の中に入る数字を　選んでください",
         monndaina: "5(1-●)=-10",
         // テキストbox_on_oof テキストboxID
         textbox_on_off: 0,
