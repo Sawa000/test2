@@ -1,5 +1,5 @@
 // ===================================定義域＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-let $perzi = 1;
+let $perzi = 2;
 let $perzi2 = 0; 
 let $perzi3 = 0; 
 let ckecnber = 0;
